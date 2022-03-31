@@ -37,7 +37,7 @@ Requirements:
 The following command should be sufficient to install the dependencies on
 Ubuntu::
 
-    sudo apt install build-essential meson libusb-1.0-0-dev libreadline-dev
+    sudo apt install build-essential meson libusb-1.0-0-dev libreadline-dev pkg-config
 
 At least Ubuntu 18.04 and later should work. The only real restriction is the
 version of the libusb API provided, and whether the meson package is recent
@@ -65,7 +65,7 @@ Installation
 
 You can run in the build dir::
 
-    ninja install
+    sudo ninja install
 
 By default, this installs to /usr/local/bin. Run meson with -Dprefix=/usr to
 install it in another path (this is an argument to meson, not ninja).
